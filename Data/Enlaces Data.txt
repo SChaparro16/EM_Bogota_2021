@@ -1,4 +1,0 @@
-Encuesta multipropóstio: https://microdatos.dane.gov.co/index.php/catalog/743/get-microdata
-Localidades SHP: https://datosabiertos.bogota.gov.co/dataset/localidad-bogota-d-c
-SHP UPZ-UPR: https://datosabiertos.bogota.gov.co/en/dataset/pensionados-activos-del-foncep-por-upz/resource/50a34bd9-ad86-405d-b0a8-8f98feb8ce3f
-SHP UPZ: https://www.arcgis.com/home/item.html?id=de50faa2dd324133bc40eefd34269ac9
