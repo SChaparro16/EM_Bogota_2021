@@ -15,18 +15,18 @@ library(ggplot2)
 # Manipulación de datos
 library(dplyr)
 library(tidyverse)
-# library(naniar) - No instalado
+# --- library(naniar) - Disponible en Fedora
 library(fastDummies)
 library(stringr)
 library(magrittr)
-# library(missForest) - No instalado
+# ---  library(missForest) - Disponible en Fedora
 # Encuestas
-## library(srvyr) - No instalado
+# --- library(srvyr) - Disponible en Fedora
 
 # ---- Datos ---- #
 
+# Ruta de datos
 setwd("/home/scha/Documentos/Proyectos/EM_Bogota_2021/Data")
-
 # Capítulo A - Identificación
 cap_a_id <- read.csv2("CAP_A_Identificación.csv",fileEncoding = "latin1")
 # Capítulo B - Datos de la vivenda y su entorno
