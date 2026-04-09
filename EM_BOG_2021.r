@@ -32,7 +32,10 @@ cap_a_id <- read.csv2("CAP_A_Identificación.csv",fileEncoding = "latin1")
 # Capítulo B - Datos de la vivenda y su entorno
 cap_b_vivenda <- read.csv2("CAP_B_Data_Vivienda.csv",fileEncoding = "latin1")
 
-# ---- Limpieza de datos ----
+# ---- Selección de variables ----
+
+# Identificación - Capítulo A
+
 # ---- Diseño de encuesta ----
 # ---- Estimaciones ----
 # ---- Gráficos ----

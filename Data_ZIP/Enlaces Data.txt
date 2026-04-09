@@ -9,3 +9,6 @@ https://datosabiertos.bogota.gov.co/en/dataset/pensionados-activos-del-foncep-po
 
 SHP UPZ
 https://www.arcgis.com/home/item.html?id=de50faa2dd324133bc40eefd34269ac9
+
+Resultados alcaldía EM 2021
+https://www.sdp.gov.co/gestion-estudios-estrategicos/informacion-estadisticas/encuesta-multiproposito/resultados
