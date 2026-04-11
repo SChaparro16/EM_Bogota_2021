@@ -76,11 +76,39 @@ cap_ab %<>% rename(infvi_tv = nvcbp1,infvi_ev = nvcbp2,infvi_and = nvcbp3,
                    centviv_cerc_gasol = nvcbp14k, 
                    centviv_cerc_prost = nvcbp14l) # Entorno de la vivienda - Proximidad
 
-# ---- Recategorización ----
-# ---- Revisión de respuestas ----
+# ---- Re-categorización - Capítulo B ----
+
+# Módulo 1 - Infraestructura vial
+
+cap_ab_m1 <- cap_ab %>% mutate(infvi_tv = case_when(infvi_tv == 1 ~ 0.25,
+                                                    infvi_tv == 2 ~ 0.75,
+                                                    infvi_tv == 3 ~ 0.5,
+                                                    infvi_tv == 4 ~ 1),
+                               infvi_ev = case_when(infvi_ev == 1 ~ 1,
+                                                    infvi_ev == 2 ~ (2/3),
+                                                    infvi_ev == 3 ~ (1/3)),
+                               infvi_and = case_when(infvi_and == 1 ~ 1,
+                                                     infvi_and == 2 ~ 0),
+                               infvi_il = case_when(infvi_il == 1 ~ 1,
+                                                    infvi_il == 2 ~ 0.5,
+                                                    infvi_il == 3 ~ 0))
+
+# Módulo 2 - Calidad interna de la vivienda
+
+# Módulo 3
+
+# Módulo 4
+
+# Módulo 5
+
+# Datos adicionales
+rm(cap_ab_m1)
+
+# ---- Análisis ausencia de respuesta ----
 
 # Paquete utilizado - Naniar
 
+# ---- Corrección ausencia de respuesta ----
 # ---- Diseño de encuesta ----
 # ---- Estimaciones ----
 # ---- Gráficos ----
