@@ -95,6 +95,37 @@ cap_ab_m1 <- cap_ab %>% mutate(infvi_tv = case_when(infvi_tv == 1 ~ 0.25,
 
 # Módulo 2 - Calidad interna de la vivienda
 
+cap_ab_m2 <- cap_ab_m1 %>% mutate(cintviv_hp = case_when(cintviv_hp == 1 ~ 1,
+                                                         cintviv_hp == 2 ~ 0,
+                                                         cintviv_hp == 9 ~ 9),
+                                  cintviv_gt = case_when(cintviv_gt == 1 ~ 1,
+                                                         cintviv_gt == 2 ~ 0,
+                                                         cintviv_gt == 9 ~ 9),
+                                  cintviv_gr_tp = case_when(cintviv_gr_tp == 1 ~ 1,
+                                                            cintviv_gr_tp == 2 ~ 0,
+                                                            cintviv_gr_tp == 9 ~ 9),
+                                  cintviv_ft = case_when(cintviv_ft == 1 ~ 1,
+                                                         cintviv_ft == 2 ~ 0,
+                                                         cintviv_ft == 9 ~ 9),
+                                  cintviv_gr_pi = case_when(cintviv_gr_pi == 1 ~ 1,
+                                                            cintviv_gr_pi == 2 ~ 0,
+                                                            cintviv_gr_pi == 9 ~ 9),
+                                  cintviv_crt = case_when(cintviv_crt == 1 ~ 1,
+                                                          cintviv_crt == 2 ~ 0,
+                                                          cintviv_crt == 9 ~ 9),
+                                  cintviv_esc_ven = case_when(cintviv_esc_ven == 1 ~ 1,
+                                                              cintviv_esc_ven == 2 ~ 0,
+                                                              cintviv_esc_ven == 9 ~ 9),
+                                  cintviv_matpar = case_when(cintviv_matpar == 1 ~ 1,
+                                                             cintviv_matpar == 2 ~ 7/8,
+                                                             cintviv_matpar == 3 ~ 6/8,
+                                                             cintviv_matpar == 4 ~ 5/8,
+                                                             cintviv_matpar == 5 ~ 4/8,
+                                                             cintviv_matpar == 6 ~ 3/8,
+                                                             cintviv_matpar == 7 ~ 2/8,
+                                                             cintviv_matpar == 8 ~ 1/8,
+                                                             cintviv_matpar == 9 ~ 0,))
+
 # Módulo 3
 
 # Módulo 4
@@ -102,7 +133,7 @@ cap_ab_m1 <- cap_ab %>% mutate(infvi_tv = case_when(infvi_tv == 1 ~ 0.25,
 # Módulo 5
 
 # Datos adicionales
-rm(cap_ab_m1)
+rm(cap_ab_m1,cap_ab_m2,cap_ab_m3,cap_ab_m4)
 
 # ---- Análisis ausencia de respuesta ----
 
